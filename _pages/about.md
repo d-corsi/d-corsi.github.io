@@ -2,7 +2,7 @@
 layout: about
 title: Home
 permalink: /
-subtitle: 
+subtitle: <strong>PhD Candidate</strong> at University of Verona<br>
 
 profile:
   align: right
