@@ -1,84 +1,154 @@
 ---
+2023
 ---
 
-@string{aps = {American Physical Society,}}
-
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
+@inproceedings{corsi2023constrained,
+  title={Constrained Reinforcement Learning and Formal Verification for Safe Colonoscopy Navigation},
+  author={Corsi*, Davide and Marzari*, Luca and Pore*, Ameya and Farinelli, Alessandro and Casals, Alicia and  Fiorini, Paolo and Dall'Alba, Diego},
+  booktitle={arXiv preprint arXiv:2303.03207},
+  year={2023},
+  abbr={arXiv},
+  selected={false},
+  pdf={https://arxiv.org/pdf/2303.03207.pdf},
+  html={https://arxiv.org/abs/2303.03207},
+  abstract={The field of robotic Flexible Endoscopes (FEs) has progressed significantly, offering a promising solution to reduce patient discomfort. However, the limited autonomy of most robotic FEs results in non-intuitive and challenging manoeuvres, constraining their application in clinical settings. While previous studies have employed lumen tracking for autonomous navigation, they fail to adapt to the presence of obstructions and sharp turns when the endoscope faces the colon wall. In this work, we propose a Deep Reinforcement Learning (DRL)-based navigation strategy that eliminates the need for lumen tracking. However, the use of DRL methods poses safety risks as they do not account for potential hazards associated with the actions taken. To ensure safety, we exploit a Constrained Reinforcement Learning (CRL) method to restrict the policy in a predefined safety regime. Moreover, we present a model selection strategy that utilises Formal Verification (FV) to choose a policy that is entirely safe before deployment. We validate our approach in a virtual colonoscopy environment and report that out of the 300 trained policies, we could identify three policies that are entirely safe. Our work demonstrates that CRL, combined with model selection through FV, can improve the robustness and safety of robotic behaviour in surgical applications.}
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
+@inproceedings{marzari2021DNNverification,
+  title={The \#DNN-Verification problem: Counting Unsafe Inputs for Deep Neural Networks},
+  author={Marzari*, Luca and Corsi*, Davide and Cicalese, Ferdinando and Farinelli, Alessandro},
+  booktitle={International Joint Conference on Artificial Intelligence},
+  year={2023},
+  abbr={IJCAI},
+  selected={true},
+  pdf={https://arxiv.org/pdf/2301.07068.pdf},
+  html={https://arxiv.org/abs/2301.07068},
+  abstract={Deep Neural Networks are increasingly adopted in critical tasks that require a high level of safety, e.g., autonomous driving. While state-of-the-art verifiers can be employed to check whether a DNN is unsafe w.r.t. some given property (i.e., whether there is at least one unsafe input configuration), their yes/no output is not informative enough for other purposes, such as shielding, model selection, or training improvements. In this paper, we introduce the #DNN-Verification problem, which involves counting the number of input configurations of a DNN that result in a violation of a particular safety property. We analyze the complexity of this problem and propose a novel approach that returns the exact count of violations. Due to the #P-completeness of the problem, we also propose a randomized, approximate method that provides a provable probabilistic bound of the correct count while significantly reducing computational requirements. We present experimental results on a set of safety-critical benchmarks that demonstrate the effectiveness of our approximate method and evaluate the tightness of the bound.}
 }
 
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein, A. and Podolsky, B. and Rosen, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
-  selected={true}
+@inproceedings{amir2023verifying,
+  title={Verifying Learning-Based Robotic Navigation Systems},
+  author={Amir*, Guy and Corsi*, Davide and Yerushalmi, Raz and Marzari, Luca and Farinelli, Alessandro and Harel, David and Katz, Guy},
+  booktitle={Tools and Algorithms for the Construction and Analysis of Systems},
+  year={2023},
+  abbr={TACAS},
+  selected={true},
+  pdf={https://arxiv.org/pdf/2205.13536.pdf},
+  html={https://link.springer.com/chapter/10.1007/978-3-031-30823-9_31},
+  abstract={Deep reinforcement learning (DRL) has become a dominant deep-learning paradigm for tasks where complex policies are learned within reactive systems. Unfortunately, these policies are known to be susceptible to bugs. Despite significant progress in DNN verification, there has been little work demonstrating the use of modern verification tools on real-world, DRL-controlled systems. In this case study, we attempt to begin bridging this gap, and focus on the important task of mapless robotic navigation — a classic robotics problem, in which a robot, usually controlled by a DRL agent, needs to efficiently and safely navigate through an unknown arena towards a target. We demonstrate how modern verification engines can be used for effective model selection, i.e., selecting the best available policy for the robot in question from a pool of candidate policies. Specifically, we use verification to detect and rule out policies that may demonstrate suboptimal behavior, such as collisions and infinite loops. We also apply verification to identify models with overly conservative behavior, thus allowing users to choose superior policies, which might be better at finding shorter paths to a target. To validate our work, we conducted extensive experiments on an actual robot, and confirmed that the suboptimal policies detected by our method were indeed flawed. We also demonstrate the superiority of our verification-driven approach over state-of-the-art, gradient attacks. Our work is the first to establish the usefulness of DNN verification in identifying and filtering out suboptimal DRL policies in real-world robots, and we believe that the methods presented here are applicable to a wide range of systems that incorporate deep-learning-based agents.}
 }
 
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
+@inproceedings{corsi2023constrained,
+  title={Constrained Reinforcement Learning for Robotics via Scenario-Based Programming},
+  author={Corsi*, Davide and Yerushalmi*, Raz and Amir, Guy and Farinelli, Alessandro and Harel, David and Katz, Guy},
+  booktitle={arXiv preprint arXiv:2206.09603},
+  year={2023},
+  abbr={arXiv},
+  selected={false},
+  pdf={https://arxiv.org/pdf/2206.09603.pdf},
+  html={https://arxiv.org/abs/2206.09603},
+  abstract={Deep reinforcement learning (DRL) has achieved groundbreaking successes in a wide variety of robotic applications. A natural consequence is the adoption of this paradigm for safety-critical tasks, where human safety and expensive hardware can be involved. In this context, it is crucial to optimize the performance of DRL-based agents while providing guarantees about their behavior. This paper presents a novel technique for incorporating domain-expert knowledge into a constrained DRL training loop. Our technique exploits the scenario-based programming paradigm, which is designed to allow specifying such knowledge in a simple and intuitive way. We validated our method on the popular robotic mapless navigation problem, in simulation, and on the actual platform. Our experiments demonstrate that using our approach to leverage expert knowledge dramatically improves the safety and the performance of the agent.}
 }
 
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
+---
+2022
+---
+
+@inproceedings{marchesini2022exploring,
+  title={Exploring Safer Behaviors for Dep Reinforcement Learning},
+  author={Marchesini*, Enrico and Corsi*, Davide and Farinelli, Alessandro},
+  booktitle={The 36th AAAI Conference on Artificial Intelligence},
+  year={2022},
+  abbr={AAAI},
+  selected={true},
+  pdf={https://ojs.aaai.org/index.php/AAAI/article/view/20737/},
+  html={https://ojs.aaai.org/index.php/AAAI/article/view/20737/},
+  abstract={We consider Reinforcement Learning (RL) problems where an agent attempts to maximize a reward signal while minimizing a cost function that models unsafe behaviors. Such formalization is addressed in the literature using constrained optimization on the cost, limiting the exploration and leading to a significant trade-off between cost and reward. In contrast, we propose a Safety-Oriented Search that complements Deep RL algorithms to bias the policy toward safety within an evolutionary cost optimization. We leverage evolutionary exploration benefits to design a novel concept of safe mutations that use visited unsafe states to explore safer actions. We further characterize the behaviors of the policies over desired specifics with a sample-based bound estimation, which makes prior verification analysis tractable in the training loop. Hence, driving the learning process towards safer regions of the policy space. Empirical evidence on the Safety Gym benchmark shows that we successfully avoid drawbacks on the return while improving the safety of the policy.}
 }
 
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
+@inproceedings{marzari2022curriculum,
+  title={Curriculum Learning for Safe Mapless Navigation},
+  author={Marzari, Luca and Corsi, Davide and Marchesini, Enrico and Farinelli, Alessandro},
+  booktitle={ACM/SIGAPP Symposium on Applied Computing},
+  year={2022},
+  abbr={ACM/SAC},
+  selected={false},
+  pdf={https://dl.acm.org/doi/pdf/10.1145/3477314.3507182},
+  html={https://dl.acm.org/doi/abs/10.1145/3477314.3507182/},
+  abstract={This work investigates the effects of Curriculum Learning (CL)-based approaches on the agent's performance. In particular, we focus on the safety aspect of robotic mapless navigation, comparing over a standard end-to-end (E2E) training strategy. To this end, we present a CL approach that leverages Transfer of Learning (ToL) and fine-tuning in a Unity-based simulation with the Robotnik Kairos as a robotic agent. For a fair comparison, our evaluation considers an equal computational demand for every learning approach (i.e., the same number of interactions and difficulty of the environments) and confirms that our CL-based method that uses ToL outperforms the E2E methodology. In particular, we improve the average success rate and the safety of the trained policy, resulting in 10\% fewer collisions in unseen testing scenarios. To further confirm these results, we employ a formal verification tool to quantify the number of correct behaviors of Reinforcement Learning policies over desired specifications.}
 }
 
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif}
+---
+2021
+---
+
+}
+
+@inproceedings{corsi2021benchmarking,
+  title={Benchmarking Safe Deep rRinforcement Learning in Aquatic Nvigation},
+  author={Corsi*, Davide and Marchesini*, Enrico and Farinelli, Alessandro},
+  booktitle={IEEE International Conference on Intelligent Robots and Systems (IROS)},
+  year={2021},
+  abbr={IROS},
+  selected={true},
+  html={https://ieeexplore.ieee.org/abstract/document/9635925/},
+  abstract={We propose a novel benchmark environment for Safe Reinforcement Learning focusing on aquatic navigation. Aquatic navigation is an extremely challenging task due to the non-stationary environment and the uncertainties of the robotic platform, hence it is crucial to consider the safety aspect of the problem, by analyzing the behavior of the trained network to avoid dangerous situations (e.g., collisions). To this end, we consider a value-based and policy-gradient Deep Reinforcement Learning (DRL) and we propose a crossover-based strategy that combines gradient-based and gradient-free DRL to improve sample-efficiency. Moreover, we propose a verification strategy based on interval analysis that checks the behavior of the trained models over a set of desired properties. Our results show that the crossover-based training outperforms prior DRL approaches, while our verification allows us to quantify the number of configurations that violate the behaviors that are described by the properties. Crucially, this will serve as a benchmark for future research in this domain of applications.}
+}
+
+@inproceedings{pore2021safe,
+  title={Safe Reinforcement Learning Using Formal Verification for Tissue Retraction in Autonomous Robotic-Assisted Surgery},
+  author={Pore*, Ameya and Corsi*, Davide and Marchesini*, Enrico and Dall'Alba, Diego and Casals, Alicia and Farinelli, Alessandro  and Fiorini, Paolo},
+  booktitle={IEEE International Conference on Intelligent Robots and Systems (IROS)},
+  year={2021},
+  abbr={IROS},
+  selected={true},
+  html={https://ieeexplore.ieee.org/abstract/document/9636175/},
+  abstract={Deep Reinforcement Learning (DRL) is a viable solution for automating repetitive surgical subtasks due to its ability to learn complex behaviours in a dynamic environment. This task automation could lead to reduced surgeon’s cognitive workload, increased precision in critical aspects of the surgery, and fewer patient-related complications. However, current DRL methods do not guarantee any safety criteria as they maximise cumulative rewards without considering the risks associated with the actions performed. Due to this limitation, the application of DRL in the safety-critical paradigm of robot-assisted Minimally Invasive Surgery (MIS) has been constrained. In this work, we introduce a Safe-DRL framework that incorporates safety constraints for the automation of surgical subtasks via DRL training. We validate our approach in a virtual scene that replicates a tissue retraction task commonly occurring in multiple phases of an MIS. Furthermore, to evaluate the safe behaviour of the robotic arms, we formulate a formal verification tool for DRL methods that provides the probability of unsafe configurations. Our results indicate that a formal analysis guarantees safety with high confidence such that the robotic instruments operate within the safe workspace and avoid hazardous interaction with other anatomical structures.}
+}
+
+@inproceedings{corsi2021formal,
+  title={Formal Verification of Neural Networks for Safety-Critical Tasks in Deep Reinforcement Learning},
+  author={Corsi, Davide and Marchesini, Enrico and Farinelli, Alessandro},
+  booktitle={The 37th Conference on Uncertainty in Artificial Intelligence (UAI)},
+  year={2021},
+  abbr={UAI},
+  selected={true},
+  pdf={https://proceedings.mlr.press/v161/corsi21a/corsi21a.pdf},
+  html={https://proceedings.mlr.press/v161/corsi21a.html},
+  abstract={In the last years, neural networks achieved groundbreaking successes in a wide variety of applications. However, for safety critical tasks, such as robotics and healthcare, it is necessary to provide some specific guarantees before the deployment in a real world context. Even in these scenarios, where high cost equipment and human safety are involved, the evaluation of the models is usually performed with the standard metrics (i.e., cumulative reward or success rate). In this paper, we introduce a novel metric for the evaluation of models in safety critical tasks, the violation rate. We build our work upon the concept of formal verification for neural networks, providing a new formulation for the safety properties that aims to ensure that the agent always makes rational decisions. To perform this evaluation, we present ProVe (Property Verifier), a novel approach based on the interval algebra, designed for the analysis of our novel behavioral properties. We apply our method to different domains (i.e., mapless navigation for mobile robots, trajectory generation for manipulators, and the standard ACAS benchmark). Results show that the violation rate computed by ProVe provides a good evaluation for the safety of trained models.} 
+}
+
+---
+2020
+---
+
+@inproceedings{marchesini2020genetic,
+  title={Genetic Soft Updates for Policy Evolution in Deep Reinforcement Learning},
+  author={Marchesini, Enrico and Corsi, Davide and Farinelli, Alessandro},
+  booktitle={The 9th International Conference on Learning Representations},
+  year={2020},
+  abbr={ICLR},
+  selected={false},
+  pdf={https://openreview.net/pdf?id=TGFO0DbD_pk},
+  html={https://openreview.net/forum?id=TGFO0DbD_pk} 
+}
+
+@inproceedings{corsi2020formal,
+  title={Formal verification for Safe Deep Reinforcement Learning in Trajectory Generation},
+  author={Corsi, Davide and Marchesini, Enrico and Farinelli, Alessandro and Fiorini, Paolo, },
+  booktitle={IEEE International Conference on Robotic Computing},
+  year={2020},
+  abbr={IRC},
+  selected={false},
+  html={https://ieeexplore.ieee.org/abstract/document/9287929/}
+}
+
+@inproceedings{marchesini2020double,
+  title={Double Deep Q-Network for Trajectory Generation of a Commercial 7DOF Redundant Manipulator},
+  author={Marchesini, Enrico and Corsi, Davide and Benfatti, Andrea and Farinelli, Alessandro and Fiorini, Paolo},
+  booktitle={IEEE International Conference on Robotic Computing},
+  year={2020},
+  abbr={IRC},
+  selected={false},
+  html={https://ieeexplore.ieee.org/abstract/document/8675598}
 }
