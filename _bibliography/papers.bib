@@ -50,6 +50,25 @@
   abstract={Deep reinforcement learning (DRL) has achieved groundbreaking successes in a wide variety of robotic applications. A natural consequence is the adoption of this paradigm for safety-critical tasks, where human safety and expensive hardware can be involved. In this context, it is crucial to optimize the performance of DRL-based agents while providing guarantees about their behavior. This paper presents a novel technique for incorporating domain-expert knowledge into a constrained DRL training loop. Our technique exploits the scenario-based programming paradigm, which is designed to allow specifying such knowledge in a simple and intuitive way. We validated our method on the popular robotic mapless navigation problem, in simulation, and on the actual platform. Our experiments demonstrate that using our approach to leverage expert knowledge dramatically improves the safety and the performance of the agent.}
 }
 
+@inproceedings{Corsi2023thesis,
+  title={Safe Deep Reinforcement Learning: Enhancing the Reliability of Intelligent Systems},
+  author={Corsi, Davide},
+  booktitle={University of Verona},
+  year={2023},
+  abbr={PhD Thesis},
+  selected={false},
+  pdf={https://d-corsi.github.io/asssets/pdf/Corsi2023thesis.pdf},
+  abstract={
+  	In the last few years, the impressive success of deep reinforcement learning (DRL) agents in a wide variety of applications has led to the adoption of these systems in safety-critical contexts (e.g., autonomous driving, robotics, and medical applications), where expensive hardware and human safety can be involved. In such contexts, an intelligent learning agent must adhere to certain requirements that go beyond the simple accomplishment of the task and typically include constraints on the agent's behavior. Against this background, this thesis proposes a set of training and validation methodologies that constitute a unified pipeline to generate safe and reliable DRL agents. In the first part of this dissertation, we focus on the problem of constrained DRL, leaving the challenging problem of the formal verification of deep neural networks for the second part of this work.
+
+	As humans, in our growing process, the help of a mentor is crucial to learn effective strategies to solve a problem while a learning process driven only by a trial-and-error approach usually leads to unsafe and inefficient solutions. Similarly, a pure end-to-end deep reinforcement learning approach often results in suboptimal policies, which typically translates into unpredictable, and thus unreliable, behaviors.
+	Following this intuition, we propose to impose a set of constraints into the DRL loop to guide the training process. These requirements, which typically encode domain expert knowledge, can be seen as suggestions that the agent should follow but is allowed to sometimes ignore if useful to maximize the reward signal.
+	A foundational requirement for our work is finding a proper strategy to define and formally encode these constraints (which we refer to as rules). In this thesis, we propose to exploit a formal language inherited from the software engineering community: scenario-based programming (SBP). For the actual training, we rely on the constrained reinforcement learning paradigm, proposing an extended version of the Lagrangian PPO algorithm. 
+
+	Recalling the parallelism with human beings, before being authorized to perform safety-critical operations, we must obtain a certification (e.g., a license to drive a car or a degree to perform medical operations).
+	In the second part of this dissertation, we apply this concept in a deep reinforcement learning context, where the intelligent agents are controlled by artificial neural networks. In particular, we propose to perform a model selection phase after the training to find models that formally respect some given safety requirements before the deployment. However, DNNs have long been considered unpredictable black boxes and thus unsuitable for safety-critical contexts. Against this background, we build upon the emerging field of formal verification for neural networks to extend state-of-the-art approaches to robotic decision-making contexts. We propose "ProVe", a verification tool for decision-making DNNs that quantifies the probability of violating the specified requirements. In the last chapter of this thesis, we provide a complete case study on a popular robotic problem: "mapless navigation". Here, we show a concrete example of the application of our pipeline, starting from the definition of the requirements to the training and the final formal verification phase, to finally obtain a provably safe and effective agent.}
+}
+
 ---
 2022
 ---
