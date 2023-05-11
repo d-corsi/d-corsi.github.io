@@ -297,6 +297,59 @@
         </div>
       </div>
 </li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+
+        <div class="col-sm-3 abbr"><abbr class="badge">PhD Thesis</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="Corsi2023thesis" class="col-sm-7">
+        <!-- Title -->
+        <div class="title">Safe Deep Reinforcement Learning: Enhancing the Reliability of Intelligent Systems</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        <em>Davide Corsi</em>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In University of Verona</em>, 2023
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="https://d-corsi.github.io/asssets/pdf/Corsi2023thesis.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-altmetric-id="" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+            <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 6px;"></span>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>
+  	In the last few years, the impressive success of deep reinforcement learning (DRL) agents in a wide variety of applications has led to the adoption of these systems in safety-critical contexts (e.g., autonomous driving, robotics, and medical applications), where expensive hardware and human safety can be involved. In such contexts, an intelligent learning agent must adhere to certain requirements that go beyond the simple accomplishment of the task and typically include constraints on the agent’s behavior. Against this background, this thesis proposes a set of training and validation methodologies that constitute a unified pipeline to generate safe and reliable DRL agents. In the first part of this dissertation, we focus on the problem of constrained DRL, leaving the challenging problem of the formal verification of deep neural networks for the second part of this work.
+
+	As humans, in our growing process, the help of a mentor is crucial to learn effective strategies to solve a problem while a learning process driven only by a trial-and-error approach usually leads to unsafe and inefficient solutions. Similarly, a pure end-to-end deep reinforcement learning approach often results in suboptimal policies, which typically translates into unpredictable, and thus unreliable, behaviors.
+	Following this intuition, we propose to impose a set of constraints into the DRL loop to guide the training process. These requirements, which typically encode domain expert knowledge, can be seen as suggestions that the agent should follow but is allowed to sometimes ignore if useful to maximize the reward signal.
+	A foundational requirement for our work is finding a proper strategy to define and formally encode these constraints (which we refer to as rules). In this thesis, we propose to exploit a formal language inherited from the software engineering community: scenario-based programming (SBP). For the actual training, we rely on the constrained reinforcement learning paradigm, proposing an extended version of the Lagrangian PPO algorithm. 
+
+	Recalling the parallelism with human beings, before being authorized to perform safety-critical operations, we must obtain a certification (e.g., a license to drive a car or a degree to perform medical operations).
+	In the second part of this dissertation, we apply this concept in a deep reinforcement learning context, where the intelligent agents are controlled by artificial neural networks. In particular, we propose to perform a model selection phase after the training to find models that formally respect some given safety requirements before the deployment. However, DNNs have long been considered unpredictable black boxes and thus unsuitable for safety-critical contexts. Against this background, we build upon the emerging field of formal verification for neural networks to extend state-of-the-art approaches to robotic decision-making contexts. We propose "ProVe", a verification tool for decision-making DNNs that quantifies the probability of violating the specified requirements. In the last chapter of this thesis, we provide a complete case study on a popular robotic problem: "mapless navigation". Here, we show a concrete example of the application of our pipeline, starting from the definition of the requirements to the training and the final formal verification phase, to finally obtain a provably safe and effective agent.</p>
+          </div>
+        </div>
+      </div>
+</li>
 </ol>
 
   <h2 class="year">2022</h2>
@@ -667,7 +720,7 @@
     <!-- Footer -->    
     <footer class="fixed-bottom">
       <div class="container mt-0">
-        © Copyright 2023 Davide  Corsi. Last updated: May 10, 2023.
+        © Copyright 2023 Davide  Corsi. Last updated: May 11, 2023.
       </div>
     </footer>
 
