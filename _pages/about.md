@@ -23,7 +23,7 @@ My **Research interests** focus on developing novel Deep Reinforcement Learning 
 
 As an essential aspect of my work, I constantly try to merge theoretical research with practical application to real-world robotic problems. For more information on my research activity, you can visit the [publications page](https://d-corsi.github.io/publications/).
 
-<font size= "4"><strong>Places</strong></font> <font size= "1"><strong>(❤️)</strong></font> <font size= "4"><strong>:</strong></font>
+<font size= "4"><strong>Places</strong></font> <font size= "1"><strong>(📍)</strong></font> <font size= "4"><strong>:</strong></font>
 
 - 🇮🇱 The Hebrew University of Jerusalem, Israel
 - 🇮🇹 University of Verona, Italy 
