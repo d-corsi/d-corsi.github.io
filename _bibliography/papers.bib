@@ -8,7 +8,7 @@
   booktitle={Formal Methods in Computer-Aided Design},
   year={2023},
   abbr={FMCAD},
-  selected={true},
+  selected={false},
   html={},
   abstract={Deep neural networks (DNNs) are increasingly being used as controllers in reactive systems. However, DNNs are highly opaque, which renders it difficult to explain and justify their actions. To mitigate this issue, there has been a surge of interest in explainable AI (XAI) techniques, capable of pinpointing the input features that caused the DNN to act as it did. Existing XAI techniques typically face two limitations: (1) they are heuristic, and do not provide formal guarantees that the explanations are correct; and (2) they often apply to ``one-shot'' systems (where the DNN is invoked independently of past invocations), as opposed to reactive systems. Here, we begin bridging this gap, and propose a formal DNN-verification-based XAI technique for reasoning about multi-step, reactive systems. We suggest methods for efficiently calculating succinct explanations, by exploiting the system's transition constraints in order to curtail the search space explored by the underlying verifier. We evaluate our approach on two popular benchmarks from the domain of automated navigation; and observe that our methods allow the efficient computation of minimal and minimum explanations, while significantly outperforming the state of the art. We also demonstrate that our method produces formal explanations that are more reliable than competing, non-verification-based XAI techniques.}
 }
@@ -90,7 +90,7 @@
   booktitle={The 36th AAAI Conference on Artificial Intelligence},
   year={2022},
   abbr={AAAI},
-  selected={true},
+  selected={false},
   pdf={https://ojs.aaai.org/index.php/AAAI/article/view/20737/},
   html={https://ojs.aaai.org/index.php/AAAI/article/view/20737/},
   abstract={We consider Reinforcement Learning (RL) problems where an agent attempts to maximize a reward signal while minimizing a cost function that models unsafe behaviors. Such formalization is addressed in the literature using constrained optimization on the cost, limiting the exploration and leading to a significant trade-off between cost and reward. In contrast, we propose a Safety-Oriented Search that complements Deep RL algorithms to bias the policy toward safety within an evolutionary cost optimization. We leverage evolutionary exploration benefits to design a novel concept of safe mutations that use visited unsafe states to explore safer actions. We further characterize the behaviors of the policies over desired specifics with a sample-based bound estimation, which makes prior verification analysis tractable in the training loop. Hence, driving the learning process towards safer regions of the policy space. Empirical evidence on the Safety Gym benchmark shows that we successfully avoid drawbacks on the return while improving the safety of the policy.}
@@ -142,7 +142,7 @@
   booktitle={The 37th Conference on Uncertainty in Artificial Intelligence},
   year={2021},
   abbr={UAI},
-  selected={true},
+  selected={false},
   pdf={https://proceedings.mlr.press/v161/corsi21a/corsi21a.pdf},
   html={https://proceedings.mlr.press/v161/corsi21a.html},
   abstract={In the last years, neural networks achieved groundbreaking successes in a wide variety of applications. However, for safety critical tasks, such as robotics and healthcare, it is necessary to provide some specific guarantees before the deployment in a real world context. Even in these scenarios, where high cost equipment and human safety are involved, the evaluation of the models is usually performed with the standard metrics (i.e., cumulative reward or success rate). In this paper, we introduce a novel metric for the evaluation of models in safety critical tasks, the violation rate. We build our work upon the concept of formal verification for neural networks, providing a new formulation for the safety properties that aims to ensure that the agent always makes rational decisions. To perform this evaluation, we present ProVe (Property Verifier), a novel approach based on the interval algebra, designed for the analysis of our novel behavioral properties. We apply our method to different domains (i.e., mapless navigation for mobile robots, trajectory generation for manipulators, and the standard ACAS benchmark). Results show that the violation rate computed by ProVe provides a good evaluation for the safety of trained models.} 
