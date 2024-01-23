@@ -404,23 +404,23 @@
 <!-- _layouts/bib.html -->
       <div class="row">
 
-        <div class="col-sm-3 abbr"><abbr class="badge">IROS</abbr></div>
+        <div class="col-sm-3 abbr"><abbr class="badge">AAAI</abbr></div>
 
         <!-- Entry bib key -->
-        <div id="pore2021safe" class="col-sm-7">
+        <div id="marchesini2022exploring" class="col-sm-7">
         <!-- Title -->
-        <div class="title"><a href="https://ieeexplore.ieee.org/abstract/document/9636175/" rel="external nofollow noopener" target="_blank">Safe Reinforcement Learning Using Formal Verification for Tissue Retraction in Autonomous Robotic-Assisted Surgery</a></div>
+        <div class="title"><a href="https://ojs.aaai.org/index.php/AAAI/article/view/20737/" rel="external nofollow noopener" target="_blank">Exploring Safer Behaviors for Dep Reinforcement Learning</a></div>
         <!-- Author -->
         <div class="author">
         
 
-        Ameya Pore*, <em>Davide Corsi*</em>, Enrico Marchesini*, Diego Dall’Alba, Alicia Casals, Alessandro Farinelli, and Paolo Fiorini</div>
+        Enrico Marchesini*, <em>Davide Corsi*</em>, and Alessandro Farinelli</div>
 
         <!-- Journal/Book title and date -->
         
         
         <div class="periodical">
-          <em>In IEEE International Conference on Intelligent Robots and Systems</em>, 2021
+          <em>In The 36th AAAI Conference on Artificial Intelligence</em>, 2022
         </div>
         <div class="periodical">
           
@@ -429,7 +429,8 @@
           <!-- Links/Buttons -->
           <div class="links">
             <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-            <a href="https://ieeexplore.ieee.org/abstract/document/9636175/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
+            <a href="https://ojs.aaai.org/index.php/AAAI/article/view/20737/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
+            <a href="https://ojs.aaai.org/index.php/AAAI/article/view/20737/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
           </div>
           
           <div class="badges">
@@ -439,7 +440,7 @@
 
           <!-- Hidden abstract block -->
           <div class="abstract hidden">
-            <p>Deep Reinforcement Learning (DRL) is a viable solution for automating repetitive surgical subtasks due to its ability to learn complex behaviours in a dynamic environment. This task automation could lead to reduced surgeon’s cognitive workload, increased precision in critical aspects of the surgery, and fewer patient-related complications. However, current DRL methods do not guarantee any safety criteria as they maximise cumulative rewards without considering the risks associated with the actions performed. Due to this limitation, the application of DRL in the safety-critical paradigm of robot-assisted Minimally Invasive Surgery (MIS) has been constrained. In this work, we introduce a Safe-DRL framework that incorporates safety constraints for the automation of surgical subtasks via DRL training. We validate our approach in a virtual scene that replicates a tissue retraction task commonly occurring in multiple phases of an MIS. Furthermore, to evaluate the safe behaviour of the robotic arms, we formulate a formal verification tool for DRL methods that provides the probability of unsafe configurations. Our results indicate that a formal analysis guarantees safety with high confidence such that the robotic instruments operate within the safe workspace and avoid hazardous interaction with other anatomical structures.</p>
+            <p>We consider Reinforcement Learning (RL) problems where an agent attempts to maximize a reward signal while minimizing a cost function that models unsafe behaviors. Such formalization is addressed in the literature using constrained optimization on the cost, limiting the exploration and leading to a significant trade-off between cost and reward. In contrast, we propose a Safety-Oriented Search that complements Deep RL algorithms to bias the policy toward safety within an evolutionary cost optimization. We leverage evolutionary exploration benefits to design a novel concept of safe mutations that use visited unsafe states to explore safer actions. We further characterize the behaviors of the policies over desired specifics with a sample-based bound estimation, which makes prior verification analysis tractable in the training loop. Hence, driving the learning process towards safer regions of the policy space. Empirical evidence on the Safety Gym benchmark shows that we successfully avoid drawbacks on the return while improving the safety of the policy.</p>
           </div>
         </div>
       </div>
