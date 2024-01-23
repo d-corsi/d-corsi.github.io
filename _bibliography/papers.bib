@@ -1,4 +1,20 @@
 ---
+2024
+---
+
+@inproceedings{marzari2023enumerating,
+  title={Enumerating Safe Regions in Deep Neural Networks with Provable Probabilistic Guarantees},
+  author={Marzari, Luca and Corsi, Davide and Marchesini, Enrico and Farinelli, Alessandro and Cicalese, Ferdinando},
+  booktitle={The 38th AAAI Conference on Artificial Intelligence},
+  year={2024},
+  abbr={AAAI},
+  selected={false},
+  pdf={https://arxiv.org/pdf/2308.09842.pdf},
+  html={https://arxiv.org/abs/2308.09842},
+  abstract={Identifying safe areas is a key point to guarantee trust for systems that are based on Deep Neural Networks (DNNs). To this end, we introduce the AllDNN-Verification problem: given a safety property and a DNN, enumerate the set of all the regions of the property input domain which are safe, i.e., where the property does hold. Due to the #P-hardness of the problem, we propose an efficient approximation method called ε-ProVe. Our approach exploits a controllable underestimation of the output reachable sets obtained via statistical prediction of tolerance limits, and can provide a tight (with provable probabilistic guarantees) lower estimate of the safe areas. Our empirical evaluation on different standard benchmarks shows the scalability and effectiveness of our method, offering valuable insights for this new type of verification of DNNs.}
+}
+
+---
 2023
 ---
 
@@ -9,7 +25,8 @@
   year={2023},
   abbr={FMCAD},
   selected={false},
-  html={},
+  pdf={https://arxiv.org/pdf/2308.00143.pdf},
+  html={https://arxiv.org/abs/2308.00143},
   abstract={Deep neural networks (DNNs) are increasingly being used as controllers in reactive systems. However, DNNs are highly opaque, which renders it difficult to explain and justify their actions. To mitigate this issue, there has been a surge of interest in explainable AI (XAI) techniques, capable of pinpointing the input features that caused the DNN to act as it did. Existing XAI techniques typically face two limitations: (1) they are heuristic, and do not provide formal guarantees that the explanations are correct; and (2) they often apply to ``one-shot'' systems (where the DNN is invoked independently of past invocations), as opposed to reactive systems. Here, we begin bridging this gap, and propose a formal DNN-verification-based XAI technique for reasoning about multi-step, reactive systems. We suggest methods for efficiently calculating succinct explanations, by exploiting the system's transition constraints in order to curtail the search space explored by the underlying verifier. We evaluate our approach on two popular benchmarks from the domain of automated navigation; and observe that our methods allow the efficient computation of minimal and minimum explanations, while significantly outperforming the state of the art. We also demonstrate that our method produces formal explanations that are more reliable than competing, non-verification-based XAI techniques.}
 }
 
