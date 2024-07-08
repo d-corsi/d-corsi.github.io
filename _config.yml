@@ -6,7 +6,7 @@ title: blank # the website title (if blank, full name will be used instead)
 first_name: Davide
 middle_name: 
 last_name: Corsi
-email: davide.corsi@univr.it
+email: dcorsi@uci.edu
 description: Davide Corsi academic website. # the ">" symbol means to ignore newlines until "footer_text:"
 footer_text: 
 keywords: Academic website, Formal Verification of DNNs, Safe DRL  # add your own keywords or leave empty
