@@ -167,7 +167,13 @@
                   <!--<th scope="row">Jan 1, 2024</th>-->
                   <th scope="row">2024</th>
                   <td>
-                     <strong>January</strong>
+                     <strong>July</strong>
+
+<ul>
+  <li>Excited to share that my first work at the <a href="https://uci.edu" rel="external nofollow noopener" target="_blank">University of California: Irvine</a> has been accepted in <a href="https://rl-conference.cc" rel="external nofollow noopener" target="_blank">RLC 2024</a> 😍. What an amazing collaboration with colleagues from all over the world <em>Verification-Guided Shielding for Deep Reinforcement Learning</em>!</li>
+</ul>
+
+ <strong>January</strong>
 
 <ul>
   <li>
@@ -325,96 +331,6 @@
 <!-- _layouts/bib.html -->
       <div class="row">
 
-        <div class="col-sm-3 abbr"><abbr class="badge">IROS</abbr></div>
-
-        <!-- Entry bib key -->
-        <div id="corsi2023constrained" class="col-sm-7">
-        <!-- Title -->
-        <div class="title"><a href="https://arxiv.org/abs/2303.03207" rel="external nofollow noopener" target="_blank">Constrained Reinforcement Learning and Formal Verification for Safe Colonoscopy Navigation</a></div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        <em>Davide Corsi*</em>, Luca Marzari*, Ameya Pore*, Alessandro Farinelli, Alicia Casals, Paolo Fiorini, and Diego Dall’Alba</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>In IEEE International Conference on Intelligent Robots and Systems</em>, 2023
-        </div>
-        <div class="periodical">
-          
-        </div>
-
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-            <a href="https://arxiv.org/abs/2303.03207" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
-            <a href="https://arxiv.org/pdf/2303.03207.pdf" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
-          </div>
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-altmetric-id="" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
-            <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 6px;"></span>
-          </div>
-
-          <!-- Hidden abstract block -->
-          <div class="abstract hidden">
-            <p>The field of robotic Flexible Endoscopes (FEs) has progressed significantly, offering a promising solution to reduce patient discomfort. However, the limited autonomy of most robotic FEs results in non-intuitive and challenging manoeuvres, constraining their application in clinical settings. While previous studies have employed lumen tracking for autonomous navigation, they fail to adapt to the presence of obstructions and sharp turns when the endoscope faces the colon wall. In this work, we propose a Deep Reinforcement Learning (DRL)-based navigation strategy that eliminates the need for lumen tracking. However, the use of DRL methods poses safety risks as they do not account for potential hazards associated with the actions taken. To ensure safety, we exploit a Constrained Reinforcement Learning (CRL) method to restrict the policy in a predefined safety regime. Moreover, we present a model selection strategy that utilises Formal Verification (FV) to choose a policy that is entirely safe before deployment. We validate our approach in a virtual colonoscopy environment and report that out of the 300 trained policies, we could identify three policies that are entirely safe. Our work demonstrates that CRL, combined with model selection through FV, can improve the robustness and safety of robotic behaviour in surgical applications.</p>
-          </div>
-        </div>
-      </div>
-</li>
-<li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-
-        <div class="col-sm-3 abbr"><abbr class="badge">IJCAI</abbr></div>
-
-        <!-- Entry bib key -->
-        <div id="marzari2021DNNverification" class="col-sm-7">
-        <!-- Title -->
-        <div class="title"><a href="https://arxiv.org/abs/2301.07068" rel="external nofollow noopener" target="_blank">The #DNN-Verification problem: Counting Unsafe Inputs for Deep Neural Networks</a></div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        Luca Marzari*, <em>Davide Corsi*</em>, Ferdinando Cicalese, and Alessandro Farinelli</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>In International Joint Conference on Artificial Intelligence</em>, 2023
-        </div>
-        <div class="periodical">
-          
-        </div>
-
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-            <a href="https://arxiv.org/abs/2301.07068" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
-            <a href="https://arxiv.org/pdf/2301.07068.pdf" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
-          </div>
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-altmetric-id="" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
-            <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 6px;"></span>
-          </div>
-
-          <!-- Hidden abstract block -->
-          <div class="abstract hidden">
-            <p>Deep Neural Networks are increasingly adopted in critical tasks that require a high level of safety, e.g., autonomous driving. While state-of-the-art verifiers can be employed to check whether a DNN is unsafe w.r.t. some given property (i.e., whether there is at least one unsafe input configuration), their yes/no output is not informative enough for other purposes, such as shielding, model selection, or training improvements. In this paper, we introduce the #DNN-Verification problem, which involves counting the number of input configurations of a DNN that result in a violation of a particular safety property. We analyze the complexity of this problem and propose a novel approach that returns the exact count of violations. Due to the #P-completeness of the problem, we also propose a randomized, approximate method that provides a provable probabilistic bound of the correct count while significantly reducing computational requirements. We present experimental results on a set of safety-critical benchmarks that demonstrate the effectiveness of our approximate method and evaluate the tightness of the bound.</p>
-          </div>
-        </div>
-      </div>
-</li>
-<li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-
         <div class="col-sm-3 abbr"><abbr class="badge">TACAS</abbr></div>
 
         <!-- Entry bib key -->
@@ -460,23 +376,23 @@
 <!-- _layouts/bib.html -->
       <div class="row">
 
-        <div class="col-sm-3 abbr"><abbr class="badge">AAAI</abbr></div>
+        <div class="col-sm-3 abbr"><abbr class="badge">IROS</abbr></div>
 
         <!-- Entry bib key -->
-        <div id="marchesini2022exploring" class="col-sm-7">
+        <div id="pore2021safe" class="col-sm-7">
         <!-- Title -->
-        <div class="title"><a href="https://ojs.aaai.org/index.php/AAAI/article/view/20737/" rel="external nofollow noopener" target="_blank">Exploring Safer Behaviors for Dep Reinforcement Learning</a></div>
+        <div class="title"><a href="https://ieeexplore.ieee.org/abstract/document/9636175/" rel="external nofollow noopener" target="_blank">Safe Reinforcement Learning Using Formal Verification for Tissue Retraction in Autonomous Robotic-Assisted Surgery</a></div>
         <!-- Author -->
         <div class="author">
         
 
-        Enrico Marchesini*, <em>Davide Corsi*</em>, and Alessandro Farinelli</div>
+        Ameya Pore*, <em>Davide Corsi*</em>, Enrico Marchesini*, Diego Dall’Alba, Alicia Casals, Alessandro Farinelli, and Paolo Fiorini</div>
 
         <!-- Journal/Book title and date -->
         
         
         <div class="periodical">
-          <em>In The 36th AAAI Conference on Artificial Intelligence</em>, 2022
+          <em>In IEEE International Conference on Intelligent Robots and Systems</em>, 2021
         </div>
         <div class="periodical">
           
@@ -485,8 +401,7 @@
           <!-- Links/Buttons -->
           <div class="links">
             <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-            <a href="https://ojs.aaai.org/index.php/AAAI/article/view/20737/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
-            <a href="https://ojs.aaai.org/index.php/AAAI/article/view/20737/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+            <a href="https://ieeexplore.ieee.org/abstract/document/9636175/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
           </div>
           
           <div class="badges">
@@ -496,7 +411,52 @@
 
           <!-- Hidden abstract block -->
           <div class="abstract hidden">
-            <p>We consider Reinforcement Learning (RL) problems where an agent attempts to maximize a reward signal while minimizing a cost function that models unsafe behaviors. Such formalization is addressed in the literature using constrained optimization on the cost, limiting the exploration and leading to a significant trade-off between cost and reward. In contrast, we propose a Safety-Oriented Search that complements Deep RL algorithms to bias the policy toward safety within an evolutionary cost optimization. We leverage evolutionary exploration benefits to design a novel concept of safe mutations that use visited unsafe states to explore safer actions. We further characterize the behaviors of the policies over desired specifics with a sample-based bound estimation, which makes prior verification analysis tractable in the training loop. Hence, driving the learning process towards safer regions of the policy space. Empirical evidence on the Safety Gym benchmark shows that we successfully avoid drawbacks on the return while improving the safety of the policy.</p>
+            <p>Deep Reinforcement Learning (DRL) is a viable solution for automating repetitive surgical subtasks due to its ability to learn complex behaviours in a dynamic environment. This task automation could lead to reduced surgeon’s cognitive workload, increased precision in critical aspects of the surgery, and fewer patient-related complications. However, current DRL methods do not guarantee any safety criteria as they maximise cumulative rewards without considering the risks associated with the actions performed. Due to this limitation, the application of DRL in the safety-critical paradigm of robot-assisted Minimally Invasive Surgery (MIS) has been constrained. In this work, we introduce a Safe-DRL framework that incorporates safety constraints for the automation of surgical subtasks via DRL training. We validate our approach in a virtual scene that replicates a tissue retraction task commonly occurring in multiple phases of an MIS. Furthermore, to evaluate the safe behaviour of the robotic arms, we formulate a formal verification tool for DRL methods that provides the probability of unsafe configurations. Our results indicate that a formal analysis guarantees safety with high confidence such that the robotic instruments operate within the safe workspace and avoid hazardous interaction with other anatomical structures.</p>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+
+        <div class="col-sm-3 abbr"><abbr class="badge">UAI</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="corsi2021formal" class="col-sm-7">
+        <!-- Title -->
+        <div class="title"><a href="https://proceedings.mlr.press/v161/corsi21a.html" rel="external nofollow noopener" target="_blank">Formal Verification of Neural Networks for Safety-Critical Tasks in Deep Reinforcement Learning</a></div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        <em>Davide Corsi</em>, Enrico Marchesini, and Alessandro Farinelli</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In The 37th Conference on Uncertainty in Artificial Intelligence</em>, 2021
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="https://proceedings.mlr.press/v161/corsi21a.html" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
+            <a href="https://proceedings.mlr.press/v161/corsi21a/corsi21a.pdf" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-altmetric-id="" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+            <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 6px;"></span>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>In the last years, neural networks achieved groundbreaking successes in a wide variety of applications. However, for safety critical tasks, such as robotics and healthcare, it is necessary to provide some specific guarantees before the deployment in a real world context. Even in these scenarios, where high cost equipment and human safety are involved, the evaluation of the models is usually performed with the standard metrics (i.e., cumulative reward or success rate). In this paper, we introduce a novel metric for the evaluation of models in safety critical tasks, the violation rate. We build our work upon the concept of formal verification for neural networks, providing a new formulation for the safety properties that aims to ensure that the agent always makes rational decisions. To perform this evaluation, we present ProVe (Property Verifier), a novel approach based on the interval algebra, designed for the analysis of our novel behavioral properties. We apply our method to different domains (i.e., mapless navigation for mobile robots, trajectory generation for manipulators, and the standard ACAS benchmark). Results show that the violation rate computed by ProVe provides a good evaluation for the safety of trained models.</p>
           </div>
         </div>
       </div>
