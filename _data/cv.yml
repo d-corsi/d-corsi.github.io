@@ -5,8 +5,6 @@
       value: Davide Corsi
     - name: Languages
       value: Italian, English
-    - name: Complete CV
-      value: [PDF](https://d-corsi.github.io/assets/pdf/Corsi2024CV.pdf)
 
 - title: Education
   type: time_table

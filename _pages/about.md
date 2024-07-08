@@ -9,7 +9,7 @@ profile:
   image: D3.jpg
   image_circular: False # crops the image to make it circular
   address: 
-    <p> 📍 Verona, Italy </p>
+    <p> 📍 Irvine, CA, USA </p>
 
 news: true  # includes a list of news items
 latest_posts: false  # includes a list of the newest posts
