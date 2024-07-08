@@ -6,7 +6,7 @@
     - name: Languages
       value: Italian, English
     - name: Complete CV
-      value: https://d-corsi.github.io/assets/pdf/Corsi2024CV.pdf
+      value: <a href='https://d-corsi.github.io/assets/pdf/Corsi2024CV.pdf'>.pdf</a>
 
 - title: Education
   type: time_table
