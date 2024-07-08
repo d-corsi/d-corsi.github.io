@@ -2,6 +2,30 @@
 2024
 ---
 
+@inproceedings{corsi2024verification,
+  title={Verification-Guided Shielding for Deep Reinforcement Learning},
+  author={Corsi, Davide and Amir, Guy and Rodriguez, Andoni and Sanchez, Cesar and Katz, Guy and Fox, Roy},
+  booktitle={The 1st Reinforcement Learning Conference},
+  year={2024},
+  abbr={RLC},
+  selected={true},
+  pdf={https://arxiv.org/pdf/2406.06507.pdf},
+  html={https://arxiv.org/abs/2406.06507},
+  abstract={In recent years, Deep Reinforcement Learning (DRL) has emerged as an effective approach to solving real-world tasks. However, despite their successes, DRL-based policies suffer from poor reliability, which limits their deployment in safety-critical domains. As a result, various methods have been put forth to address this issue by providing formal safety guarantees. Two main approaches include shielding and verification. While shielding ensures the safe behavior of the policy by employing an external online component (i.e., a ``shield'') that overruns potentially dangerous actions, this approach has a significant computational cost as the shield must be invoked at runtime to validate every decision. On the other hand, verification is an offline process that can identify policies that are unsafe, prior to their deployment, yet, without providing alternative actions when such a policy is deemed unsafe. In this work, we present verification-guided shielding -- a novel approach that bridges the DRL reliability gap by integrating these two methods. Our approach combines both formal and probabilistic verification tools to partition the input domain into safe and unsafe regions. In addition, we employ clustering and symbolic representation procedures that compress the unsafe regions into a compact representation. This, in turn, allows to temporarily activate the shield solely in (potentially) unsafe regions, in an efficient manner. Our novel approach allows to significantly reduce runtime overhead while still preserving formal safety guarantees. We extensively evaluate our approach on two benchmarks from the robotic navigation domain, as well as provide an in-depth analysis of its scalability and completeness.}
+}
+
+@inproceedings{corsi2024verification,
+  title={Verification-Guided Shielding for Deep Reinforcement Learning},
+  author={Corsi, Davide and Camponogara, Davide and Farinelli, Alessandro},
+  booktitle={The 1st Reinforcement Learning Conference},
+  year={2024},
+  abbr={RLC},
+  selected={false},
+  pdf={https://arxiv.org/pdf/2405.20534.pdf},
+  html={https://arxiv.org/abs/2405.20534},
+  abstract={An exciting and promising frontier for Deep Reinforcement Learning (DRL) is its application to real-world robotic systems. While modern DRL approaches achieved remarkable successes in many robotic scenarios (including mobile robotics, surgical assistance, and autonomous driving) unpredictable and non-stationary environments can pose critical challenges to such methods. These features can significantly undermine fundamental requirements for a successful training process, such as the Markovian properties of the transition model. To address this challenge, we propose a new benchmarking environment for aquatic navigation using recent advances in the integration between game engines and DRL. In more detail, we show that our benchmarking environment is problematic even for state-of-the-art DRL approaches that may struggle to generate reliable policies in terms of generalization power and safety. Specifically, we focus on PPO, one of the most widely accepted algorithms, and we propose advanced training techniques (such as curriculum learning and learnable hyperparameters). Our extensive empirical evaluation shows that a well-designed combination of these ingredients can achieve promising results. Our simulation environment and training baselines are freely available to facilitate further research on this open problem and encourage collaboration in the field.}
+}
+
 @inproceedings{marzari2023enumerating,
   title={Enumerating Safe Regions in Deep Neural Networks with Provable Probabilistic Guarantees},
   author={Marzari, Luca and Corsi, Davide and Marchesini, Enrico and Farinelli, Alessandro and Cicalese, Ferdinando},
