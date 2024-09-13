@@ -121,6 +121,51 @@
 <!-- _layouts/bib.html -->
       <div class="row">
 
+        <div class="col-sm-3 abbr"><abbr class="badge">arXiv</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="corsi2023constrained" class="col-sm-7">
+        <!-- Title -->
+        <div class="title"><a href="https://arxiv.org/abs/2206.09603" rel="external nofollow noopener" target="_blank">Enforcing Specific Behaviours via Constrained DRL and Scenario-Based Programming</a></div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        <em>Davide Corsi*</em>, Raz Yerushalmi*, Guy Amir, Alessandro Farinelli, David Harel, and Guy Katz</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In arXiv preprint arXiv:2206.09603</em>, 2024
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="https://arxiv.org/abs/2206.09603" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
+            <a href="https://arxiv.org/pdf/2206.09603.pdf" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-altmetric-id="" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+            <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 6px;"></span>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Deep Reinforcement Learning (DRL) has achieved groundbreaking results in robotics, cyber-physical systems, healthcare, and many other real-world applications in recent years. However, despite their success, DRL controllers’ inherent opacity and unpredictability limit their widespread adoption in many safety-critical scenarios. In such contexts it is crucial to consider additional safety and behavioral requirements pertaining to the deployed agents, in addition to its performance. In this paper, we propose using Scenario-Based Programming (SBP) to define a cost signal that can be optimized together with the standard reward function to enforce additional behaviors in the final agents. To this end, we rely on the constrained DRL framework, particularly on a modified version of Lagrangian-PPO, which we call λ-PPO, designed especially for the multi-step and temporal nature of the SBP requirements. This approach allows us to easily design and enforce the agent’s adherence to these requirements during training without compromising its freedom to explore the state space and converge to an optimal policy, enabling the use of a simple reward function. We have validated our method extensively by experimenting with real robotic platforms in a mapless navigation task, demonstrating the success of our approach. We use SBP to define different types of requirements, including a more predictable behavior, safety properties, and the injection of prior knowledge to drive training.</p>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+
         <div class="col-sm-3 abbr"><abbr class="badge">RLC</abbr></div>
 
         <!-- Entry bib key -->
@@ -308,7 +353,7 @@
         <div class="col-sm-3 abbr"><abbr class="badge">IROS</abbr></div>
 
         <!-- Entry bib key -->
-        <div id="corsi2023constrained" class="col-sm-7">
+        <div id="corsi2023constrainee" class="col-sm-7">
         <!-- Title -->
         <div class="title"><a href="https://arxiv.org/abs/2303.03207" rel="external nofollow noopener" target="_blank">Constrained Reinforcement Learning and Formal Verification for Safe Colonoscopy Navigation</a></div>
         <!-- Author -->
@@ -432,51 +477,6 @@
           <!-- Hidden abstract block -->
           <div class="abstract hidden">
             <p>Deep reinforcement learning (DRL) has become a dominant deep-learning paradigm for tasks where complex policies are learned within reactive systems. Unfortunately, these policies are known to be susceptible to bugs. Despite significant progress in DNN verification, there has been little work demonstrating the use of modern verification tools on real-world, DRL-controlled systems. In this case study, we attempt to begin bridging this gap, and focus on the important task of mapless robotic navigation — a classic robotics problem, in which a robot, usually controlled by a DRL agent, needs to efficiently and safely navigate through an unknown arena towards a target. We demonstrate how modern verification engines can be used for effective model selection, i.e., selecting the best available policy for the robot in question from a pool of candidate policies. Specifically, we use verification to detect and rule out policies that may demonstrate suboptimal behavior, such as collisions and infinite loops. We also apply verification to identify models with overly conservative behavior, thus allowing users to choose superior policies, which might be better at finding shorter paths to a target. To validate our work, we conducted extensive experiments on an actual robot, and confirmed that the suboptimal policies detected by our method were indeed flawed. We also demonstrate the superiority of our verification-driven approach over state-of-the-art, gradient attacks. Our work is the first to establish the usefulness of DNN verification in identifying and filtering out suboptimal DRL policies in real-world robots, and we believe that the methods presented here are applicable to a wide range of systems that incorporate deep-learning-based agents.</p>
-          </div>
-        </div>
-      </div>
-</li>
-<li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-
-        <div class="col-sm-3 abbr"><abbr class="badge">arXiv</abbr></div>
-
-        <!-- Entry bib key -->
-        <div id="corsi2023constrainee" class="col-sm-7">
-        <!-- Title -->
-        <div class="title"><a href="https://arxiv.org/abs/2206.09603" rel="external nofollow noopener" target="_blank">Constrained Reinforcement Learning for Robotics via Scenario-Based Programming</a></div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        <em>Davide Corsi*</em>, Raz Yerushalmi*, Guy Amir, Alessandro Farinelli, David Harel, and Guy Katz</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>In arXiv preprint arXiv:2206.09603</em>, 2023
-        </div>
-        <div class="periodical">
-          
-        </div>
-
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-            <a href="https://arxiv.org/abs/2206.09603" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
-            <a href="https://arxiv.org/pdf/2206.09603.pdf" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
-          </div>
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-altmetric-id="" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
-            <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 6px;"></span>
-          </div>
-
-          <!-- Hidden abstract block -->
-          <div class="abstract hidden">
-            <p>Deep reinforcement learning (DRL) has achieved groundbreaking successes in a wide variety of robotic applications. A natural consequence is the adoption of this paradigm for safety-critical tasks, where human safety and expensive hardware can be involved. In this context, it is crucial to optimize the performance of DRL-based agents while providing guarantees about their behavior. This paper presents a novel technique for incorporating domain-expert knowledge into a constrained DRL training loop. Our technique exploits the scenario-based programming paradigm, which is designed to allow specifying such knowledge in a simple and intuitive way. We validated our method on the popular robotic mapless navigation problem, in simulation, and on the actual platform. Our experiments demonstrate that using our approach to leverage expert knowledge dramatically improves the safety and the performance of the agent.</p>
           </div>
         </div>
       </div>
@@ -904,7 +904,7 @@
     <!-- Footer -->    
     <footer class="fixed-bottom">
       <div class="container mt-0">
-        © Copyright 2024 Davide  Corsi. Last updated: July 08, 2024.
+        © Copyright 2024 Davide  Corsi. Last updated: September 13, 2024.
       </div>
     </footer>
 
