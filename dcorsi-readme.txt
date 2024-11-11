@@ -1,0 +1,1 @@
+if you want to have the cv section remember to put "CV.md" into the pages folder, in the same way you can create new sections
