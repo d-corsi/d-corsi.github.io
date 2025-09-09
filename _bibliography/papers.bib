@@ -20,7 +20,7 @@
   booktitle={7th Annual Conference on Learning for Dynamics and Control},
   year={2025},
   abbr={L4DC},
-  selected={false},
+  selected={true},
   pdf={https://arxiv.org/pdf/2410.02038},
   html={https://par.nsf.gov/biblio/10614736},
   abstract={While Deep Reinforcement Learning (DRL) has achieved remarkable success across various domains, it remains vulnerable to occasional catastrophic failures without additional safeguards. An effective solution to prevent these failures is to use a shield that validates and adjusts the agent’s actions to ensure compliance with a provided set of safety specifications. For real-world robotic domains, it is essential to define safety specifications over continuous state and action spaces to accurately account for system dynamics and compute new actions that minimally deviate from the agent’s original decision. In this paper, we present the first shielding approach specifically designed to ensure the satisfaction of safety requirements in continuous state and action spaces, making it suitable for practical robotic applications. Our method builds upon realizability, an essential property that confirms the shield will always be able to generate a safe action for any state in the environment. We formally prove that realizability can be verified for stateful shields, enabling the incorporation of non-Markovian safety requirements, such as loop avoidance. Finally, we demonstrate the effectiveness of our approach in ensuring safety without compromising the policy’s success rate by applying it to a navigation problem and a multi-agent particle environment1. Keywords: Shielding, Reinforcement Learning, Safety, Robotics}
@@ -107,7 +107,7 @@
   booktitle={The 38th AAAI Conference on Artificial Intelligence},
   year={2024},
   abbr={AAAI},
-  selected={false},
+  selected={true},
   pdf={https://arxiv.org/pdf/2308.09842.pdf},
   html={https://arxiv.org/abs/2308.09842},
   abstract={Identifying safe areas is a key point to guarantee trust for systems that are based on Deep Neural Networks (DNNs). To this end, we introduce the AllDNN-Verification problem: given a safety property and a DNN, enumerate the set of all the regions of the property input domain which are safe, i.e., where the property does hold. Due to the #P-hardness of the problem, we propose an efficient approximation method called ε-ProVe. Our approach exploits a controllable underestimation of the output reachable sets obtained via statistical prediction of tolerance limits, and can provide a tight (with provable probabilistic guarantees) lower estimate of the safe areas. Our empirical evaluation on different standard benchmarks shows the scalability and effectiveness of our method, offering valuable insights for this new type of verification of DNNs.}
@@ -159,7 +159,7 @@
   booktitle={Tools and Algorithms for the Construction and Analysis of Systems},
   year={2023},
   abbr={TACAS},
-  selected={true},
+  selected={false},
   pdf={https://arxiv.org/pdf/2205.13536.pdf},
   html={https://link.springer.com/chapter/10.1007/978-3-031-30823-9_31},
   abstract={Deep reinforcement learning (DRL) has become a dominant deep-learning paradigm for tasks where complex policies are learned within reactive systems. Unfortunately, these policies are known to be susceptible to bugs. Despite significant progress in DNN verification, there has been little work demonstrating the use of modern verification tools on real-world, DRL-controlled systems. In this case study, we attempt to begin bridging this gap, and focus on the important task of mapless robotic navigation — a classic robotics problem, in which a robot, usually controlled by a DRL agent, needs to efficiently and safely navigate through an unknown arena towards a target. We demonstrate how modern verification engines can be used for effective model selection, i.e., selecting the best available policy for the robot in question from a pool of candidate policies. Specifically, we use verification to detect and rule out policies that may demonstrate suboptimal behavior, such as collisions and infinite loops. We also apply verification to identify models with overly conservative behavior, thus allowing users to choose superior policies, which might be better at finding shorter paths to a target. To validate our work, we conducted extensive experiments on an actual robot, and confirmed that the suboptimal policies detected by our method were indeed flawed. We also demonstrate the superiority of our verification-driven approach over state-of-the-art, gradient attacks. Our work is the first to establish the usefulness of DNN verification in identifying and filtering out suboptimal DRL policies in real-world robots, and we believe that the methods presented here are applicable to a wide range of systems that incorporate deep-learning-based agents.}
@@ -246,7 +246,7 @@
   booktitle={The 37th Conference on Uncertainty in Artificial Intelligence},
   year={2021},
   abbr={UAI},
-  selected={true},
+  selected={false},
   pdf={https://proceedings.mlr.press/v161/corsi21a/corsi21a.pdf},
   html={https://proceedings.mlr.press/v161/corsi21a.html},
   abstract={In the last years, neural networks achieved groundbreaking successes in a wide variety of applications. However, for safety critical tasks, such as robotics and healthcare, it is necessary to provide some specific guarantees before the deployment in a real world context. Even in these scenarios, where high cost equipment and human safety are involved, the evaluation of the models is usually performed with the standard metrics (i.e., cumulative reward or success rate). In this paper, we introduce a novel metric for the evaluation of models in safety critical tasks, the violation rate. We build our work upon the concept of formal verification for neural networks, providing a new formulation for the safety properties that aims to ensure that the agent always makes rational decisions. To perform this evaluation, we present ProVe (Property Verifier), a novel approach based on the interval algebra, designed for the analysis of our novel behavioral properties. We apply our method to different domains (i.e., mapless navigation for mobile robots, trajectory generation for manipulators, and the standard ACAS benchmark). Results show that the violation rate computed by ProVe provides a good evaluation for the safety of trained models.} 
