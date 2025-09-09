@@ -24,29 +24,29 @@
       abstract: My first step into Deep Reinforcement Learning was taken during my master's thesis. The goal of the work was to develop a neural network controller for the Franka Emika manipulator, with an emphasis on safety aspects. Part of the thesis has been published at IRC, 2020.
 
 
-- title: Experience
-  type: time_table
-  contents:
+# - title: Experience
+#   type: time_table
+#   contents:
 
-    - title: Teaching Assistant
-      institution: University of Verona, Verona, Italy
-      year: 10/2022 - 06/2023 
-      abstract: Teaching and laboratory assistant for the master's degree course "Reinforcement Learning"
+#     - title: Teaching Assistant
+#       institution: University of Verona, Verona, Italy
+#       year: 10/2022 - 06/2023 
+#       abstract: Teaching and laboratory assistant for the master's degree course "Reinforcement Learning"
 
-    - title: Visiting Researcher
-      institution: The Hebrew University of Jerusalem, Israel.
-      year: 02/2022 - 06/2022
-      abstract: Reseach visit at the Katz Lab under the supervision of Professor Guy Katz, PhD.
+#     - title: Visiting Researcher
+#       institution: The Hebrew University of Jerusalem, Israel.
+#       year: 02/2022 - 06/2022
+#       abstract: Reseach visit at the Katz Lab under the supervision of Professor Guy Katz, PhD.
      
-    - title: Research Fellow
-      institution: University of Verona, Verona, Italy
-      year: 10/2018 - 10/2019
-      abstract: I worked on the European project INTACTCH2020 "Development of Innovative Techniques for Navigation and Perception on Robotic Platforms for Water Quality Monitoring" as part of the European program Horizon2020. 
+#     - title: Research Fellow
+#       institution: University of Verona, Verona, Italy
+#       year: 10/2018 - 10/2019
+#       abstract: I worked on the European project INTACTCH2020 "Development of Innovative Techniques for Navigation and Perception on Robotic Platforms for Water Quality Monitoring" as part of the European program Horizon2020. 
 
-    - title: Teaching Assistant
-      institution: University of Verona, Verona, Italy
-      year: 01/2021 - 06/2021 
-      abstract: Teaching and laboratory assistant for the master's degree course "Foundations of Artificial Intelligence"
+#     - title: Teaching Assistant
+#       institution: University of Verona, Verona, Italy
+#       year: 01/2021 - 06/2021 
+#       abstract: Teaching and laboratory assistant for the master's degree course "Foundations of Artificial Intelligence"
 
 # - title: Honors and Awards
 #   type: time_table
@@ -60,9 +60,9 @@
 #       year: 2023/2024
 #       abstract: mobility grants reserved to PhD students for non-EU destinations
 
-- title: Academic Service
-  type: list
-  contents:
-    - Programme Committee for Thirty-Seventh AAAI Conference on Artificial Intelligence (AAAI).
-    - Reviewer for the International Joint Conference on Artificial Intelligence (IJCAI).
-    - Reviewer for the International Conference on Autonomous Agents and Multiagent Systems (AAMAS).
+# - title: Academic Service
+#   type: list
+#   contents:
+#     - Programme Committee for Thirty-Seventh AAAI Conference on Artificial Intelligence (AAAI).
+#     - Reviewer for the International Joint Conference on Artificial Intelligence (IJCAI).
+#     - Reviewer for the International Conference on Autonomous Agents and Multiagent Systems (AAMAS).
